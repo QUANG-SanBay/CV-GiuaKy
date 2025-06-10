@@ -1,0 +1,31 @@
+:root{
+    --primary-c:#170F23;
+    --text-c: #fff;
+    --text-c-50: rgba(255, 255, 255, 0.5);
+
+    /* color của quang senpai */
+    --header-c: #737373;
+    --bgr-c: #f2f9fd;
+    --color-shakespeare-100: #e4f2fa;
+    --color-shakespeare-200: #c2e4f5;
+    --color-shakespeare-300: #8cd0ed;
+    --color-shakespeare-400: #4bb6e0;
+    --color-shakespeare-500: #299fce;
+    --color-shakespeare-600: #1a80af;
+    --color-shakespeare-700: #16668e;
+    --color-shakespeare-800: #165676;
+    --color-shakespeare-900: #184962;
+    --color-shakespeare-950: #102e41;
+}
+*, 
+*::before, 
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+}

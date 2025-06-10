@@ -1,0 +1,53 @@
+
+/* css cho header */
+.header{
+    height: 120px;
+    display: flex;
+    background-color: var(--bgr-c);
+}
+.header__ctn{
+    display: flex;
+}
+.header__logo{
+
+}
+.header__logo-img{
+    height: 120px;
+}
+.header__nav{
+    flex: 1;
+    align-content: center;
+}
+.header__nav-lists{
+    display: flex;
+    list-style: none;
+    justify-content: end;
+}
+.header__nav-lists-item{
+    padding: 0 12px;
+    position: relative;
+}
+.header__nav-lists-item-link::after{
+    position: absolute;
+    content: "";
+    top: 100%;
+    width: 0%;
+    height: 2px;
+    right: 50%;
+    transform: translateX(50%);
+    background-color: var(--color-shakespeare-600);
+    transition: all 0.3s ease-in-out;
+}
+.header__nav-lists-item-link:hover::after{
+    width: 80%;
+}
+.header__nav-lists-item-link:hover{
+    color: var(--color-shakespeare-600);
+}
+.header__nav-lists-item-link{
+    text-decoration: none;
+    font-size: 1.6rem;
+    line-height: 2;
+    font-weight: 600;
+    color: var(--header-c);
+}
