@@ -27,6 +27,7 @@
     padding: 0 12px;
     position: relative;
 }
+/* thanh bên dưới list nav item */
 .header__nav-lists-item-link::after{
     position: absolute;
     content: "";
@@ -50,4 +51,56 @@
     line-height: 2;
     font-weight: 600;
     color: var(--header-c);
+}
+.banner{
+    height: 320px;
+    width: 100%;
+    background: linear-gradient(90deg, #336CA5, #336CA5,#88a0b8 ,#336CA5);
+}
+.mybanner{
+    display: flex;
+    height: 100%;
+}
+.banner__intro{
+    width: 50%;
+    color: var(--text-c);
+    align-content: center;
+}
+.banner__intro-hiThere{
+    font-size: 2.8rem;
+    line-height: 1.5;
+    font-weight: 600;
+}
+.banner__intro-name{
+    font-size: 3.4rem;
+    line-height: 1.5;
+    margin-bottom: 14px;
+}
+.banner__intro-job{
+    font-size: 2.4rem;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+.banner__intro-infor{
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+.banner__avt{
+    width: 50%;
+    align-content: center;
+    justify-items: center;
+}
+.banner__avt-myavt{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #EBEFF2;
+}
+.banner__avt-img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    aspect-ratio: 1 / 1;
 }

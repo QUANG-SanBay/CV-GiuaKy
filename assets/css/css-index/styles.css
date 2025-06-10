@@ -1,3 +1,4 @@
+/* brg wedsite */
 .root{
     position: relative;
     background-color: var(--primary-c);
@@ -6,13 +7,14 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+/* brg cover */
 .bgr-cover{
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('../imgs/bg_cover.9bd1cfea.png');
+    background-image: url('../../imgs/bg_cover.9bd1cfea.png');
     z-index: 1;
 }
 .container{
@@ -30,6 +32,7 @@
     list-style: none;
 }
 .lists__item{
+    margin-bottom: 16px;
 }
 .lists__item-link{
     display: block;
@@ -50,12 +53,13 @@
 .lists__item-link-img{
     overflow: hidden;
     border-radius: 8px 8px 0 0;
-    width: 100%;
-    height: 237px;
+    /* width: 100%;
+    height: 237px; */
 }
 .lists__item-link-img-item{
-    width: 178px;
+    width: 100%;
     height: 100%;
+    aspect-ratio: 3/4;
     object-fit: cover;
 }
 .lists__item-link-deitals{
