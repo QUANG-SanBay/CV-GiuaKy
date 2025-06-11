@@ -106,3 +106,121 @@
     object-fit: contain;
     aspect-ratio: 1 / 1;
 }
+
+
+/* CSS cho left content */
+.my-infor__leftContent {
+    margin-top: 20px;
+}
+
+.my-infor__hobbies,
+.my-infor__skills,
+.my-infor__Language,
+.my-infor__Contact  {
+    background-color: var(--color-shakespeare-300);
+    border-right: 2px solid var(--color-shakespeare-400);
+    border-left: 2px solid var(--color-shakespeare-400);
+
+}
+
+.my-infor__hobbies-title,
+.my-infor__skills-title, 
+.my-infor__Language-h3,
+.my-infor__Contact-h3{
+    background-color: var(--color-shakespeare-800);
+    color: var(--text-c);
+    font-size: 2.8rem;
+    line-height: 1.5;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.my-infor__hobbies-deitals,
+.my-infor__skills-deitals,
+.my-infor__Language-lists,
+.my-infor__Contact-lists{
+    font-size: 1.4rem;
+    padding: 4px 8px;
+    line-height: 1.5;
+}
+.my-infor__hobbies-deitals ul,
+.my-infor__skills-deitals-SoftSK-lists, 
+.my-infor__Language-lists-item, 
+.my-infor__Contact-lists{
+    margin-left: 16px;
+}
+.my-infor__skills {}
+
+.my-infor__skills-title {}
+
+.my-infor__skills-deitals {
+
+}
+.my-infor__skills-deitals-hardSK {}
+
+.my-infor__skills-deitals-hardSK-h4,.my-infor__skills-deitals-SoftSK-h4 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.my-infor__skills-deitals-hardSK-lists {
+    display: flex;
+    list-style: none;
+}
+
+.my-infor__skills-deitals-hardSK-lists-item {
+    width: 56px;
+    height: 70px;
+    font-size: 4.2rem;
+    text-align: center;
+    align-content: center;
+    background-color: var(--bgr-c);
+    margin: 0 3px;
+}
+
+.my-infor__skills-deitals-SoftSK {}
+
+.my-infor__skills-deitals-SoftSK-h4 {
+}
+
+.my-infor__skills-deitals-SoftSK-lists {
+}
+
+.my-infor__skills-deitals-SoftSK-lists-item {}
+
+.my-infor__Language{
+
+}
+.my-infor__Language-h3{
+
+}
+.my-infor__Language-lists{
+}
+.my-infor__Language-lists-item{
+    /* font-size: 1.4rem; */
+}
+.my-infor__Contact{
+
+}
+.my-infor__Contact-h4{
+
+}
+.my-infor__Contact-lists{
+    list-style: none;
+
+}
+.my-infor__Contact-lists-item{
+
+}
+.my-infor__Contact-lists-item a{
+    color: var(--text-c-black);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.my-infor__Contact-lists-item span{
+    font-size: 3.8rem;
+    min-width: 60px;
+    display: block;
+    text-align: center;
+}
