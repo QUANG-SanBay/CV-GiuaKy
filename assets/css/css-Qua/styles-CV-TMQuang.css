@@ -1,5 +1,8 @@
 
 /* css cho header */
+.root{
+    background-color: var(--bgr-c);
+}
 .header{
     height: 120px;
     display: flex;
@@ -109,7 +112,7 @@
 
 
 /* CSS cho left content */
-.my-infor__leftContent {
+.my-infor {
     margin-top: 20px;
 }
 .my-infor__ctn{
@@ -223,4 +226,87 @@
     min-width: 60px;
     display: block;
     text-align: center;
+}
+/* css cho conntent bên phải */
+.my-infor__aboutMe,
+.my-infor__CareerObjective,
+.my-infor__CertificatesAwards,
+.my-infor__project{
+    background-color: var(--color-shakespeare-200);
+    border: 2px solid var(--color-shakespeare-400);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.my-infor__aboutMe-h3,
+.my-infor__CareerObjective-h3,
+.my-infor__CertificatesAwards-h3,
+.my-infor__project-h3{
+    font-size: 2.8rem;
+    text-align: center;
+    line-height: 1.5;
+    background-color: var(--color-shakespeare-300);
+}
+.my-infor__aboutMe-deitails,
+.my-infor__CareerObjective-deitails,
+.my-infor__CertificatesAwards-deitails,
+.my-infor__project-deitails{
+    font-size: 1.4rem;
+    padding: 30px 8px;
+}
+.my-infor__aboutMe-deitails-name{
+    font-size: 3.2rem;
+    color: var( --color-shakespeare-800);
+    margin-bottom: 20px;
+}
+.my-infor__aboutMe-deitails-job{
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var( --color-shakespeare-800);
+    margin-bottom: 12px;
+
+}
+.my-infor__aboutMe-deitails p,
+.my-infor__CareerObjective-deitails p,
+.my-infor__CertificatesAwards-deitails p{
+    font-size: 1.4rem;
+    color: var(--text-c-black);
+    text-align: justify;
+    line-height: 1.5;
+}
+.my-infor__aboutMe-contact{
+    width: 350px;
+    float: right;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+.my-infor__aboutMe-contact-lists{
+    background-color: var(--color-shakespeare-400);
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.my-infor__aboutMe-contact-lists-item{
+    width:  20%;
+    text-align: center;
+}
+.my-infor__aboutMe-contact-lists-item a{
+    text-decoration: none;
+    color: var(--text-c-black);
+    font-size: 4.8rem;
+
+}
+/* css cho phần project */
+.my-infor__project{
+    margin: 0;
+}
+.my-infor__project-deitails-name{
+    display: block;
+    font-weight: 600 ;
+    margin-bottom: 8px;
+    line-height: 1.5;
 }
