@@ -1,8 +1,4 @@
 :root{
-    --primary-c:#170F23;
-    --text-c: #fff;
-    --text-c-50: rgba(255, 255, 255, 0.5);
-
     /* color của quang senpai */
     --header-c: #737373;
     --bgr-c: #f2f9fd;
@@ -15,7 +11,7 @@
     --color-shakespeare-700: #16668e;
     --color-shakespeare-800: #165676;
     --color-shakespeare-900: #184962;
-    --color-shakespeare-950: #102e41;
+    --text-c-black: #102e41;
 }
 *, 
 *::before, 
