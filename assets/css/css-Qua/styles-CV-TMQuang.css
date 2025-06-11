@@ -84,6 +84,7 @@
 .mybanner{
     display: flex;
     height: 100%;
+    position: relative;
 }
 .banner__intro{
     width: 50%;
@@ -145,7 +146,12 @@
     object-fit: contain;
     aspect-ratio: 1 / 1;
 }
-
+.banner__avt-img-view{
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    transform: translateX(50%) translateY(-50%);
+}
 
 /* CSS cho left content */
 
@@ -358,6 +364,7 @@
     border-top: 2px solid var(--color-shakespeare-300);
     height: 280px;
     width: 100%;
+    animation: inCard 0.9s ease-out;
 }
 .footer__logo{
     text-align: center;
