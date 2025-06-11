@@ -236,7 +236,7 @@
     border: 2px solid var(--color-shakespeare-400);
     border-radius: 8px;
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 .my-infor__aboutMe-h3,
 .my-infor__CareerObjective-h3,
@@ -308,5 +308,49 @@
     display: block;
     font-weight: 600 ;
     margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+/* css cho footer */
+.footer{
+    margin-top: 28px;
+    border-top: 2px solid var(--color-shakespeare-300);
+    height: 280px;
+    width: 100%;
+}
+.footer__logo{
+    text-align: center;
+}
+.footer__logo img{
+    height: 120px;
+    
+}
+.footer__society{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+.footer__society-list{
+    padding: 0 12px;
+}
+.footer__society-list-link{
+    line-height: 1.5;
+    font-size: 3.8rem;
+
+}
+.footer__contact{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+.footer__contact-list{
+    padding: 0 12px;
+}
+.footer__contact-list-link{
+    color: var(--text-c-black);
+    text-decoration: none;
+    font-size: 1.2rem;
     line-height: 1.5;
 }
