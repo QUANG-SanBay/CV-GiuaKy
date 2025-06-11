@@ -112,15 +112,15 @@
 .my-infor__leftContent {
     margin-top: 20px;
 }
-
+.my-infor__ctn{
+    border-radius: 8px;
+    border: 2px solid var(--color-shakespeare-400);
+}
 .my-infor__hobbies,
 .my-infor__skills,
 .my-infor__Language,
 .my-infor__Contact  {
     background-color: var(--color-shakespeare-300);
-    border-right: 2px solid var(--color-shakespeare-400);
-    border-left: 2px solid var(--color-shakespeare-400);
-
 }
 
 .my-infor__hobbies-title,
