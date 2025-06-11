@@ -27,4 +27,6 @@ html{
 }
 html{
     scroll-behavior: smooth;
-}
+    scrollbar-color: var(--color-shakespeare-300) var(--color-shakespeare-700);
+    scrollbar-width: thin;
+}   

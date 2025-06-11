@@ -4,9 +4,14 @@
     background-color: var(--bgr-c);
 }
 .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 120px;
     display: flex;
     background-color: var(--bgr-c);
+    z-index: 999;
 }
 .header__ctn{
     display: flex;
@@ -76,6 +81,9 @@
 }
 
 /* css cho banner */
+.content{
+    margin-top: 120px;
+}
 .banner{
     height: 320px;
     width: 100%;
@@ -84,7 +92,7 @@
 .mybanner{
     display: flex;
     height: 100%;
-    position: relative;
+    /* position: relative; */
 }
 .banner__intro{
     width: 50%;
