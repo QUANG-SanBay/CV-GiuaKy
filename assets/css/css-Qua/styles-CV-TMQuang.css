@@ -12,10 +12,11 @@
     display: flex;
 }
 .header__logo{
-
+    animation: inCard 0.3s ease-out;
 }
 .header__logo-img{
     height: 120px;
+    
 }
 .header__nav{
     flex: 1;
@@ -29,6 +30,24 @@
 .header__nav-lists-item{
     padding: 0 12px;
     position: relative;
+}
+.header__nav-lists-item:nth-child(1){
+    animation: inCard 0.33s ease-out;
+}
+.header__nav-lists-item:nth-child(2){
+    animation: inCard 0.36s ease-out;
+}
+.header__nav-lists-item:nth-child(3){
+    animation: inCard 0.39s ease-out;
+}
+.header__nav-lists-item:nth-child(4){
+    animation: inCard 0.42s ease-out;
+}
+.header__nav-lists-item:nth-child(5){
+    animation: inCard 0.45s ease-out;
+}
+.header__nav-lists-item:nth-child(6){
+    animation: inCard 0.48s ease-out;
 }
 /* thanh bên dưới list nav item */
 .header__nav-lists-item-link::after{
@@ -75,21 +94,27 @@
     font-size: 3rem;
     line-height: 1.5;
     font-weight: 600;
+    animation: inCard 0.55s ease-out;
 }
 .banner__intro-name{
     font-size: 3.4rem;
     line-height: 1.5;
     margin-bottom: 14px;
+    animation: inCard 0.6s ease-out;
 }
 .banner__intro-job{
     font-size: 2.6rem;
     line-height: 1.5;
     margin-bottom: 8px;
     font-weight: 600;
+    animation: inCard 0.65s ease-out;
+
 }
 .banner__intro-infor{
     font-size: 1.6rem;
     line-height: 1.5;
+    animation: inCard 0.7s ease-out;
+
 }
 .banner__avt{
     width: 50%;
@@ -101,7 +126,18 @@
     width: 200px;
     border-radius: 50%;
     overflow: hidden;
-    background-color: #EBEFF2;
+    background-color: #EEF2F3;
+    animation: inCard 0.6s ease-out;
+    border: 1px solid var(--color-shakespeare-300);
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+.banner__avt-myavt:hover{
+    border: 1.5px solid var(--color-shakespeare-400);
+    box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.5);
+    transform: translateY(-2px) scale(1.01);
+    cursor: pointer;
+
 }
 .banner__avt-img{
     width: 100%;
@@ -112,8 +148,10 @@
 
 
 /* CSS cho left content */
+
 .my-infor {
     margin-top: 20px;
+    animation: inCard 0.8s ease-in-out;
 }
 .my-infor__ctn{
     border-radius: 8px;
@@ -152,14 +190,6 @@
 .my-infor__Contact-lists{
     margin-left: 16px;
 }
-.my-infor__skills {}
-
-.my-infor__skills-title {}
-
-.my-infor__skills-deitals {
-
-}
-.my-infor__skills-deitals-hardSK {}
 
 .my-infor__skills-deitals-hardSK-h4,.my-infor__skills-deitals-SoftSK-h4 {
     font-size: 1.8rem;
@@ -172,6 +202,7 @@
 }
 
 .my-infor__skills-deitals-hardSK-lists-item {
+    display: block;
     width: 56px;
     height: 70px;
     font-size: 4.2rem;
@@ -179,40 +210,21 @@
     align-content: center;
     background-color: var(--bgr-c);
     margin: 0 3px;
+    transform: translateY(0px) scale(1);
+    box-shadow: 1px 1px 1px 0.5px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
 }
-
-.my-infor__skills-deitals-SoftSK {}
-
-.my-infor__skills-deitals-SoftSK-h4 {
-}
-
-.my-infor__skills-deitals-SoftSK-lists {
-}
-
-.my-infor__skills-deitals-SoftSK-lists-item {}
-
-.my-infor__Language{
+.my-infor__skills-deitals-hardSK-lists-item:hover{
+    background-color:var(--color-shakespeare-200);
+    transform: translateY(-5px) scale(1.04);
+    box-shadow: 1px 1px 1.5px 0.7px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
 
 }
-.my-infor__Language-h3{
 
-}
-.my-infor__Language-lists{
-}
-.my-infor__Language-lists-item{
-    /* font-size: 1.4rem; */
-}
-.my-infor__Contact{
-
-}
-.my-infor__Contact-h4{
-
-}
+/* css cho conact */
 .my-infor__Contact-lists{
     list-style: none;
-
-}
-.my-infor__Contact-lists-item{
 
 }
 .my-infor__Contact-lists-item a{
@@ -222,10 +234,20 @@
     align-items: center;
 }
 .my-infor__Contact-lists-item span{
+    display: block;
+    background-color: var(--bgr-c);
+    margin-bottom: 4px;
+    margin-right: 4px;
+    border-radius: 8px;
     font-size: 3.8rem;
     min-width: 60px;
-    display: block;
     text-align: center;
+    box-shadow: 1px 1px 1px 1px rgb(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+.my-infor__Contact-lists-item span:hover{
+    box-shadow: 1px 1px 2px 2px rgb(0, 0, 0, 0.5);
+    transform: translateY(-2px) scale(1.05);
 }
 /* css cho conntent bên phải */
 .my-infor__aboutMe,
@@ -283,6 +305,7 @@
 }
 .my-infor__aboutMe-contact-lists{
     background-color: var(--color-shakespeare-400);
+    padding: 8px 4px;
     display: flex;
     list-style: none;
     justify-content: center;
@@ -293,12 +316,24 @@
 .my-infor__aboutMe-contact-lists-item{
     width:  20%;
     text-align: center;
+    padding: 0 6px;
 }
+
 .my-infor__aboutMe-contact-lists-item a{
+    display: block;
     text-decoration: none;
     color: var(--text-c-black);
-    font-size: 4.8rem;
-
+    background-color: var(--bgr-c);
+    font-size: 4.4rem;
+    border-radius: 8px;
+    align-content: center;
+    justify-items: center;
+    box-shadow: 1px 1px 1px 1px rgb(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+.my-infor__aboutMe-contact-lists-item a:hover{
+    box-shadow: 1px 1px 2px 2px rgb(0, 0, 0, 0.5);
+    transform: translateY(-5px) scale(1.05);
 }
 /* css cho phần project */
 .my-infor__project{
@@ -309,6 +344,12 @@
     font-weight: 600 ;
     margin-bottom: 8px;
     line-height: 1.5;
+}
+.my-infor__project-deitails ul{
+    line-height: 1.5;
+}
+.my-infor__project-deitails ul a{
+    text-decoration: none;
 }
 
 /* css cho footer */
