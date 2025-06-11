@@ -163,7 +163,10 @@
 }
 
 /* CSS cho left content */
+<<<<<<< HEAD
 
+=======
+>>>>>>> 72327bd (hoàn thiện giao diện content)
 .my-infor {
     margin-top: 20px;
     animation: inCard 0.8s ease-in-out;
@@ -261,12 +264,15 @@
     font-size: 3.8rem;
     min-width: 60px;
     text-align: center;
+<<<<<<< HEAD
     box-shadow: 1px 1px 1px 1px rgb(0, 0, 0, 0.5);
     transition: all 0.3s ease-in-out;
 }
 .my-infor__Contact-lists-item span:hover{
     box-shadow: 1px 1px 2px 2px rgb(0, 0, 0, 0.5);
     transform: translateY(-2px) scale(1.05);
+=======
+>>>>>>> 72327bd (hoàn thiện giao diện content)
 }
 /* css cho conntent bên phải */
 .my-infor__aboutMe,
@@ -277,7 +283,11 @@
     border: 2px solid var(--color-shakespeare-400);
     border-radius: 8px;
     overflow: hidden;
+<<<<<<< HEAD
     margin-bottom: 24px;
+=======
+    margin-bottom: 20px;
+>>>>>>> 72327bd (hoàn thiện giao diện content)
 }
 .my-infor__aboutMe-h3,
 .my-infor__CareerObjective-h3,
@@ -324,7 +334,10 @@
 }
 .my-infor__aboutMe-contact-lists{
     background-color: var(--color-shakespeare-400);
+<<<<<<< HEAD
     padding: 8px 4px;
+=======
+>>>>>>> 72327bd (hoàn thiện giao diện content)
     display: flex;
     list-style: none;
     justify-content: center;
@@ -335,6 +348,7 @@
 .my-infor__aboutMe-contact-lists-item{
     width:  20%;
     text-align: center;
+<<<<<<< HEAD
     padding: 0 6px;
 }
 
@@ -353,6 +367,14 @@
 .my-infor__aboutMe-contact-lists-item a:hover{
     box-shadow: 1px 1px 2px 2px rgb(0, 0, 0, 0.5);
     transform: translateY(-5px) scale(1.05);
+=======
+}
+.my-infor__aboutMe-contact-lists-item a{
+    text-decoration: none;
+    color: var(--text-c-black);
+    font-size: 4.8rem;
+
+>>>>>>> 72327bd (hoàn thiện giao diện content)
 }
 /* css cho phần project */
 .my-infor__project{
@@ -363,6 +385,7 @@
     font-weight: 600 ;
     margin-bottom: 8px;
     line-height: 1.5;
+<<<<<<< HEAD
 }
 .my-infor__project-deitails ul{
     line-height: 1.5;
@@ -414,4 +437,6 @@
     text-decoration: none;
     font-size: 1.2rem;
     line-height: 1.5;
+=======
+>>>>>>> 72327bd (hoàn thiện giao diện content)
 }
