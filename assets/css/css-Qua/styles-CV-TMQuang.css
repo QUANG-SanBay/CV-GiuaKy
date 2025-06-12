@@ -428,6 +428,8 @@
 .my-infor__CareerObjective,
 .my-infor__CertificatesAwards,
 .my-infor__project,
-.footer {
+.footer__logo,
+.footer__society,
+.footer__contact {
     visibility: hidden;
 }
