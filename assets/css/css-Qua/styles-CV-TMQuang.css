@@ -126,6 +126,7 @@
 
 }
 .banner__avt{
+    display: flex;
     width: 50%;
     align-content: center;
     justify-items: center;
