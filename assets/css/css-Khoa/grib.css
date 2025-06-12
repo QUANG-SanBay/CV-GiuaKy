@@ -1,0 +1,61 @@
+/*responsive cho cac thiet bi*/
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2em;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2em;
+    }
+    
+    .hero-description {
+        font-size: 0.95em;
+        padding: 0 20px;
+    }
+    
+    .hero-cta {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-button {
+        width: 200px;  
+        justify-content: center;
+    }
+    
+    .header-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .header-info h1 {
+        font-size: 2em;
+    }
+    
+    .contact-info {
+        align-items: center;
+    }
+    
+    .navbar-nav {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+    
+    .nav-link {
+        padding: 6px 12px;
+        font-size: 0.8em;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+}
+@media (max-width: 768px) {
+    .cv-body {
+        grid-template-columns: 1fr;
+    }
+}
