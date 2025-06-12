@@ -172,7 +172,13 @@ function initScrollReveal() {
     });
 
     // Footer
-    sr.reveal('.footer', {
+    sr.reveal('.footer__logo', {
+        delay: 150
+    });
+    sr.reveal('.footer__society', {
+        delay: 150
+    });
+    sr.reveal('.footer__contact', {
         delay: 150
     });
 }
