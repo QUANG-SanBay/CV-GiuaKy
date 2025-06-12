@@ -27,6 +27,11 @@
     font-size: 3.8rem;
     margin-bottom: 12px;
     line-height: 2;
+    display: block;
+    text-align: center;
+    background-color: #008586;
+    color: white;
+    border-radius: 8px;
 }
 .lists{
     list-style: none;
