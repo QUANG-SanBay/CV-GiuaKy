@@ -11,7 +11,7 @@
     height: 120px;
     display: flex;
     background-color: var(--bgr-c);
-    z-index: 999;
+    z-index: 800;
 }
 .header__ctn{
     display: flex;
@@ -85,14 +85,24 @@
     margin-top: 120px;
 }
 .banner{
+    position: relative;
     height: 320px;
     width: 100%;
     background: linear-gradient(90deg, #336CA5, #336CA5,#88a0b8 ,#336CA5);
 }
+#backgroundCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
 .mybanner{
     display: flex;
     height: 100%;
-    /* position: relative; */
+    position: relative;
+    z-index: 2;
 }
 .banner__intro{
     width: 50%;
@@ -128,8 +138,6 @@
 .banner__avt{
     display: flex;
     width: 50%;
-    align-content: center;
-    justify-items: center;
 }
 .banner__avt-myavt{
     height: 200px;
@@ -141,6 +149,7 @@
     border: 1px solid var(--color-shakespeare-300);
     box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease-in-out;
+    margin: auto;
 }
 .banner__avt-myavt:hover{
     border: 1.5px solid var(--color-shakespeare-400);
@@ -480,6 +489,17 @@
     text-decoration: none;
     font-size: 1.2rem;
     line-height: 1.5;
-=======
->>>>>>> 72327bd (hoàn thiện giao diện content)
+}
+.my-infor__hobbies,
+.my-infor__skills,
+.my-infor__Language,
+.my-infor__Contact,
+.my-infor__aboutMe,
+.my-infor__CareerObjective,
+.my-infor__CertificatesAwards,
+.my-infor__project,
+.footer__logo,
+.footer__society,
+.footer__contact {
+    visibility: hidden;
 }
