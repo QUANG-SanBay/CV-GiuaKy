@@ -10,8 +10,9 @@
     right: 0;
     height: 120px;
     display: flex;
-    background-color: var(--bgr-c);
+    background-color: rgba(242, 249, 253, 0.9);
     z-index: 800;
+    backdrop-filter: blur(10px);
 }
 .header__ctn{
     display: flex;
