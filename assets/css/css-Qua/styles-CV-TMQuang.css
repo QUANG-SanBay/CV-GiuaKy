@@ -172,10 +172,24 @@
 }
 
 /* CSS cho left content */
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> 72327bd (hoàn thiện giao diện content)
+.my-infor {
+    margin-top: 20px;
+    animation: inCard 0.8s ease-in-out;
+}
+.my-infor__ctn{
+    border-radius: 8px;
+    border: 2px solid var(--color-shakespeare-400);
+=======
 
 .my-infor {
     margin-top: 20px;
     animation: inCard 0.8s ease-in-out;
+>>>>>>> a25c071 (thêm tranform và animation)
 }
 .my-infor__ctn{
     border-radius: 8px;
@@ -266,12 +280,21 @@
     font-size: 3.8rem;
     min-width: 60px;
     text-align: center;
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a25c071 (thêm tranform và animation)
     box-shadow: 1px 1px 1px 1px rgb(0, 0, 0, 0.5);
     transition: all 0.3s ease-in-out;
 }
 .my-infor__Contact-lists-item span:hover{
     box-shadow: 1px 1px 2px 2px rgb(0, 0, 0, 0.5);
     transform: translateY(-2px) scale(1.05);
+<<<<<<< HEAD
+=======
+>>>>>>> 72327bd (hoàn thiện giao diện content)
+=======
+>>>>>>> a25c071 (thêm tranform và animation)
 }
 /* css cho conntent bên phải */
 .my-infor__aboutMe,
@@ -282,7 +305,11 @@
     border: 2px solid var(--color-shakespeare-400);
     border-radius: 8px;
     overflow: hidden;
+<<<<<<< HEAD
     margin-bottom: 24px;
+=======
+    margin-bottom: 20px;
+>>>>>>> 72327bd (hoàn thiện giao diện content)
 }
 .my-infor__aboutMe-h3,
 .my-infor__CareerObjective-h3,
@@ -329,7 +356,14 @@
 }
 .my-infor__aboutMe-contact-lists{
     background-color: var(--color-shakespeare-400);
+<<<<<<< HEAD
+<<<<<<< HEAD
     padding: 8px 4px;
+=======
+>>>>>>> 72327bd (hoàn thiện giao diện content)
+=======
+    padding: 8px 4px;
+>>>>>>> a25c071 (thêm tranform và animation)
     display: flex;
     list-style: none;
     justify-content: center;
@@ -340,6 +374,8 @@
 .my-infor__aboutMe-contact-lists-item{
     width:  20%;
     text-align: center;
+<<<<<<< HEAD
+<<<<<<< HEAD
     padding: 0 6px;
 }
 
@@ -358,6 +394,33 @@
 .my-infor__aboutMe-contact-lists-item a:hover{
     box-shadow: 1px 1px 2px 2px rgb(0, 0, 0, 0.5);
     transform: translateY(-5px) scale(1.05);
+=======
+=======
+    padding: 0 6px;
+>>>>>>> a25c071 (thêm tranform và animation)
+}
+
+.my-infor__aboutMe-contact-lists-item a{
+    display: block;
+    text-decoration: none;
+    color: var(--text-c-black);
+<<<<<<< HEAD
+    font-size: 4.8rem;
+
+>>>>>>> 72327bd (hoàn thiện giao diện content)
+=======
+    background-color: var(--bgr-c);
+    font-size: 4.4rem;
+    border-radius: 8px;
+    align-content: center;
+    justify-items: center;
+    box-shadow: 1px 1px 1px 1px rgb(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+.my-infor__aboutMe-contact-lists-item a:hover{
+    box-shadow: 1px 1px 2px 2px rgb(0, 0, 0, 0.5);
+    transform: translateY(-5px) scale(1.05);
+>>>>>>> a25c071 (thêm tranform và animation)
 }
 /* css cho phần project */
 .my-infor__project{
@@ -368,6 +431,13 @@
     font-weight: 600 ;
     margin-bottom: 8px;
     line-height: 1.5;
+<<<<<<< HEAD
+}
+.my-infor__project-deitails ul{
+    line-height: 1.5;
+}
+.my-infor__project-deitails ul a{
+    text-decoration: none;
 }
 .my-infor__project-deitails ul{
     line-height: 1.5;

@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
+
+.cv-container {
+  max-width: 900px;
+  margin: 40px auto;
+  display: flex;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease;
+}
+
+.left {
+  background: #f0f0f0;
+  width: 35%;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.left img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: cover;
+  animation: fadeIn 2s ease;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.6s ease;
+}
+
+.left img.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.left h2 {
+  color: #3b3b3b;
+  margin-bottom: 5px;
+}
+
+.left p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.section-box {
+  padding: 10px;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.section-box h3 {
+  background: #3b3b3b;
+  color: white;
+  padding: 5px;
+  font-size: 15px;
+}
+
+.section-box p {
+  padding: 5px 0;
+  font-size: 13px;
+}
+
+.right {
+  padding: 30px;
+  width: 65%;
+}
+
+.right-section {
+  margin-bottom: 30px;
+  /* Luôn hiện, bỏ hiệu ứng cuộn */
+  opacity: 1;
+  transform: none;
+  transition: transform 0.4s ease;
+}
+
+.right-section h3 {
+  background: #3b3b3b;
+  color: white;
+  padding: 8px 10px;
+  font-size: 16px;
+}
+
+.right-section p,
+.right-section li {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-left: 10px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+/* Hiệu ứng load CV container */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hiệu ứng fadeIn cho avatar */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Tiêu đề trượt từ trái */
+h2,
+h3 {
+  position: relative;
+  animation: slideInLeft 1s ease forwards;
+}
+
+@keyframes slideInLeft {
+  0% {
+    left: -30px;
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+/* Hover avatar */
+.left img:hover {
+  transform: scale(1.2) rotate(1deg);
+  transition: transform 0.5s ease;
+}
+
+/* Hover section box: nhích phải */
+.section-box:hover {
+  transform: translateX(5px);
+  transition: transform 0.3s ease;
+}
+
+/* Hover link trong section box */
+.section-box a:hover {
+  transform: scale(1.05);
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+  color: #0073e6;
+}
+
+/* Hover right-section: phóng + nhích phải */
+.right-section:hover {
+  transform: scale(1.05) translateX(5px);
+}
+
+/* Nút lên đầu trang */
+#toTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 10px 15px;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+#toTopBtn:hover {
+  background: #0073e6;
+}

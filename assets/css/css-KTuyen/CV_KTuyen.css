@@ -1,0 +1,106 @@
+/* ----- Global Styles ----- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7fc;
+}
+
+.cv-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+.left-section {
+    width: 35%;
+    background-color: #f6e9d7; /* Nền màu cam nhạt */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.right-section {
+    width: 65%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h2, h3 {
+    color: #d35400; /* Màu cam đậm */
+    margin-bottom: 10px;
+    border-bottom: 2px solid #A9A9A9; /* Gạch ngang bên dưới */
+    padding-bottom: 5px; /* Khoảng cách giữa văn bản và đường kẻ */
+}
+
+.section {
+    margin-bottom: 20px;
+    background: #f0efed;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.section:hover {
+    transform: scale(1.05); /* Phóng to nhẹ */
+    background-color: #f8f3ed; /* Nền sáng hơn */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Đổ bóng mạnh hơn */
+    z-index: 1; /* Làm nổi bật mục này */
+}
+
+.cv-container .section:not(:hover) {
+    opacity: 0.6; /* Giảm độ đậm của các mục không được hover */
+}
+
+.personal-info p, .section-content p {
+    margin: 5px 0;
+    line-height: 1.5;
+    transition: color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+}
+
+.personal-info p:hover, .section-content p:hover {
+    color: #af6f45; /* Màu cam đậm hơn */
+    transform: scale(1.1); /* Phóng to nhẹ chữ khi hover */
+}
+
+a {
+    color: #d35400;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #e67e22; /* Đổi màu khi hover */
+}
+
+img {
+    display: block;
+    margin: 0 auto 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #d35400;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1); /* Phóng to thêm khi hover */
+}
+
+/* ----- Hover Effects for Links ----- */
+a:active {
+    color: #c0392b; /* Màu đỏ đậm hơn khi nhấn */
+}
